@@ -1,0 +1,6 @@
+library(viridis)
+n <- 200
+cols <- viridis(n)
+pie(c(0.05, rep(0.95/n, n)), col=c("Grey", cols) , lty=0,
+    labels=c("Time spent learning to tidy data", rep("", n/2), "Time spent making the colours look pretty"), main = 'Learning R')
+
